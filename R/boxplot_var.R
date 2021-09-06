@@ -1,5 +1,6 @@
 #' @param feat
 #' @param df
+#' @param quality_bin
 #' @import plyr
 #' @import dplyr
 #' @import ggplot2
@@ -8,7 +9,7 @@
 #' @export
 
 
-boxplot_var <- function(feat, df){
+boxplot_var <- function(feat, df, quality_bin){
   df %>%
     ggplot(aes_string(x = as.factor('quality_bin'), y = feat, color = 'quality_bin')) +
     geom_boxplot(outlier.color = "darkred", notch = FALSE) +
