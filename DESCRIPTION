@@ -1,6 +1,6 @@
 Package: ProjectPackage
 Type: Package
-Title: gatherpairs
+Title: boxplot_var
 Version: 0.1.0
 Author: "Gahraman Akbar"
 Maintainer: The package maintainer <qehremanekber@gmail.com>
